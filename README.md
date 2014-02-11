@@ -1,0 +1,1 @@
+A Node.js library for interacting with the Coinbase API
