@@ -1,17 +1,15 @@
 var coinbase = require('./lib/coinbase.js'),
+	creds = require('./creds.js')(),
 	https = require('https');
 
-coinbase.key('H9a7GeR24GnXTvvf');
-coinbase.secret('XAZdpOCfxMoR7BCtFoerQf3xGCfFMCOo');
+coinbase.key(creds.key);
+coinbase.secret(creds.secret);
 
 var options2 = {
-	url: 'https://coinbase.com/api/v1/addresses',
-	json: {
-		some: 'params'
-	}
+	url: 'https://coinbase.com/api/v1/addresses'
 };
 
-coinbase.get(options2, function (res, err) {
+coinbase.post(options2, function (res, err) {
 	if (err) {
 		console.log(err);
 	} else {
