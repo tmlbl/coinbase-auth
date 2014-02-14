@@ -1,6 +1,6 @@
 {
   "name": "coinbase",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Coinbase API",
   "main": "./lib/coinbase.js",
   "bin": {
@@ -15,7 +15,4 @@
   "bugs": {
     "url": "https://github.com/tmlbl/coinbase/issues"
   },
-  "dependencies": {
-    "nonce": "~1.0.3"
-  }
 }
