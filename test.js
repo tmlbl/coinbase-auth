@@ -5,9 +5,7 @@ var coinbase = require('./lib/coinbase.js'),
 coinbase.key(creds.key);
 coinbase.secret(creds.secret);
 
-var options = {
-	url: 'https://coinbase.com/api/v1/account/balance'
-};
+var options = 'https://coinbase.com/api/v1/account/balance';
 
 coinbase.get(options, function (res, err) {
 	if (err) {
