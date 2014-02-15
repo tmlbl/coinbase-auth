@@ -49,3 +49,5 @@ coinbase.get(url, function (res, err) {
   }
 });
 ````
+
+To see what you can do with the Coinbase API, take a look at their [documentation](https://coinbase.com/api/doc).
