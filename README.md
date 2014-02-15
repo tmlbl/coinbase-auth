@@ -51,3 +51,5 @@ coinbase.get(url, function (res, err) {
 ````
 
 To see what you can do with the Coinbase API, take a look at their [documentation](https://coinbase.com/api/doc).
+
+To show your appreciation for this module, feel free to send love to 1EM5MS6pNdVKm1H5qu3VGY7NXh3ZqjAkti
