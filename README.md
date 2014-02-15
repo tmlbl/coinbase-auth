@@ -1,16 +1,18 @@
-##### coinbase-auth
-## A Node.js library for interacting with the Coinbase Bitcoin API
+# coinbase-auth
+### A Node.js library for interacting with the Coinbase Bitcoin API
 
 Takes care of nonce-ing and authentication for Coinbase's secure API. Usage could not be easier. First:
 
 `npm install coinbase-auth`
 
-There is no need to `npm install`. Coinbase-auth only depends on built-in modules. Next, give coinbase-auth your API credentials:
+There is no need to `npm install` dependencies. Coinbase-auth only depends on built-in modules. Next, give coinbase-auth your API credentials:
 
-`var coinbase = require('coinbase-auth');
+````
+var coinbase = require('coinbase-auth');
 
 coinbase.key('myAPIkey');
-coinbase.secret('myAPIsecret');`
+coinbase.secret('myAPIsecret');
+````
 
 Making a request is as easy as creating an options object and specifying the method. I use the following format:
 
