@@ -1,11 +1,8 @@
 {
-  "name": "coinbase",
+  "name": "coinbase-auth",
   "version": "0.0.1",
   "description": "Coinbase API",
   "main": "./lib/coinbase.js",
-  "bin": {
-    "coinbase": "./bin/coinbase"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tmlbl/coinbase.git"
