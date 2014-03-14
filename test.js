@@ -7,7 +7,7 @@ coinbase.secret(creds.secret);
 
 var options = 'https://coinbase.com/api/v1/account/balance';
 
-coinbase.get(options, function (res, err) {
+coinbase.get(options, function (err, res) {
 	if (err) {
 		console.log(err);
 	} else {
@@ -25,7 +25,7 @@ var options2 = {
 	}
 };
 
-coinbase.post(options2, function (res, err) {
+coinbase.post(options2, function (err, res) {
 	if (err) {
 		console.log(err);
 	} else {
