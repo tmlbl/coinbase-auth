@@ -27,7 +27,7 @@ var options = {
   }
 };
 
-coinbase.post(options, function (res, err) {
+coinbase.post(options, function (err, res) {
   if (err) {
     console.log(err);
   } else {
@@ -41,7 +41,7 @@ For a GET request, omit the options object and pass in only the url.
 ````
 var url = 'https://coinbase.com/api/v1/account/balance';
 
-coinbase.get(url, function (res, err) {
+coinbase.get(url, function (err, res) {
   if (err) {
     console.log(err);
   } else {
