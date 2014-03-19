@@ -34,9 +34,26 @@ coinbase.post(options, function (err, res) {
     console.log(res);
   }
 });
+
+var putOptions = {
+  url: 'https://coinbase.com/api/v1/users/512db383f8182bd24d000001',
+  json: {
+    'user': {
+      'email': 'goodmail@example.com'
+    }
+  }
+};
+
+coinbase.put(options, function (err, res) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(res);
+  }
+});
 ````
 
-For a GET request, omit the options object and pass in only the url.
+For a GET or DELETE request, omit the options object and pass in only the url.
 
 ````
 var url = 'https://coinbase.com/api/v1/account/balance';
@@ -48,28 +65,10 @@ coinbase.get(url, function (err, res) {
     console.log(res);
   }
 });
-````
 
-For a DELETE request, omit the options object and pass in only the url.
-
-````
-var url = 'https://coinbase.com/api/v1/account/balance';
+var deleteUrl = 'https://coinbase.com/api/v1/transactions/501a3554f8182b2754000003/cancel_request';
 
 coinbase.delete(url, function (err, res) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(res);
-  }
-});
-````
-
-For a PUT request, omit the options object and pass in only the url.
-
-````
-var url = 'https://coinbase.com/api/v1/account/balance';
-
-coinbase.put(url, function (err, res) {
   if (err) {
     console.log(err);
   } else {
