@@ -50,6 +50,34 @@ coinbase.get(url, function (err, res) {
 });
 ````
 
+For a DELETE request, omit the options object and pass in only the url.
+
+````
+var url = 'https://coinbase.com/api/v1/account/balance';
+
+coinbase.delete(url, function (err, res) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(res);
+  }
+});
+````
+
+For a PUT request, omit the options object and pass in only the url.
+
+````
+var url = 'https://coinbase.com/api/v1/account/balance';
+
+coinbase.put(url, function (err, res) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(res);
+  }
+});
+````
+
 To see what you can do with the Coinbase API, take a look at their [documentation](https://coinbase.com/api/doc).
 
 To show your appreciation for this module, feel free to send love to 1EM5MS6pNdVKm1H5qu3VGY7NXh3ZqjAkti
