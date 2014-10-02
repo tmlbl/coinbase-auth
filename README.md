@@ -5,7 +5,7 @@ Takes care of nonce-ing and authentication for Coinbase's secure API. Usage coul
 
 `npm install coinbase-auth`
 
-There is no need to `npm install` dependencies. Coinbase-auth only depends on built-in modules. Next, give coinbase-auth your API credentials:
+Next, give coinbase-auth your API credentials:
 
 ````
 var coinbase = require('coinbase-auth');
